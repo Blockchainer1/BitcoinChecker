@@ -4,5 +4,6 @@
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
-/build
 /captures
+./BitcoinChecker_APK_OUT/depack/*
+./BitcoinChecker_APK_OUT/out/*
