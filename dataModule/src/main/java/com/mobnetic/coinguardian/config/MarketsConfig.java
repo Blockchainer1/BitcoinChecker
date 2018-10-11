@@ -151,5 +151,6 @@ public class MarketsConfig {
 		addMarket(new BtcAlpha());
 		addMarket(new Graviex());
 		addMarket(new StockExchange());
+		addMarket(new Crex24());
 	}
 }
