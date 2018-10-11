@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 2.2.3
+
+Name: res/drawable-hdpi-v4/ic_action_info.png
+SHA1-Digest: labPwTEthquJBjCZRa4aqxF53Zw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: gO/DtdPhuGY6DEPotekqjc7mUrQ=
+
+Name: res/layout/dynamic_currency_pairs_dialog.xml
+SHA1-Digest: teXqbiTnOQWQYy+NEZrzjlJ+Bew=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: jFagUVBfa7/DraUsby57URU6Pnc=
+
+Name: res/layout-v11/main_activity.xml
+SHA1-Digest: cSQ56L7KYGEaL3VIOPM4x4p0TQ4=
+
+Name: resources.arsc
+SHA1-Digest: ug7rKZPGeBRdarp6KlfRlE2uPck=
+
+Name: res/layout-v11/dynamic_currency_pairs_dialog.xml
+SHA1-Digest: uCISgOObGVX3THD6+0KGS1UimOI=
+
+Name: classes.dex
+SHA1-Digest: xkFd1IhZbP/JJxE8g2KAk/LLVHw=
+
+Name: res/layout/main_activity.xml
+SHA1-Digest: ormOOpYmhSMT20g2gxCgASugbow=
+
