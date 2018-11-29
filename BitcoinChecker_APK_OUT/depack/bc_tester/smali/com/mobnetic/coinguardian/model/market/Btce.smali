@@ -21,9 +21,9 @@
 
 .field private static final TTS_NAME:Ljava/lang/String; = "WEX"
 
-.field private static final URL:Ljava/lang/String; = "https://wex.nz/api/3/ticker/%1$s"
+.field private static final URL:Ljava/lang/String; = "https://wex.link/api/3/ticker/%1$s"
 
-.field private static final URL_CURRENCY_PAIRS:Ljava/lang/String; = "https://wex.nz/api/3/info"
+.field private static final URL_CURRENCY_PAIRS:Ljava/lang/String; = "https://wex.link/api/3/info"
 
 
 # direct methods
@@ -204,7 +204,7 @@
 
     .prologue
     .line 90
-    const-string v0, "https://wex.nz/api/3/info"
+    const-string v0, "https://wex.link/api/3/info"
 
     return-object v0
 .end method
@@ -257,7 +257,7 @@
 
     .line 68
     :cond_0
-    const-string v1, "https://wex.nz/api/3/ticker/%1$s"
+    const-string v1, "https://wex.link/api/3/ticker/%1$s"
 
     new-array v2, v5, [Ljava/lang/Object;
 

@@ -22,9 +22,9 @@
 .method constructor <init>(Lcom/mobnetic/coinguardiandatamodule/tester/MainActivity$2;Landroid/content/Context;Lcom/mobnetic/coinguardian/model/Market;Lcom/mobnetic/coinguardian/util/CurrencyPairsMapHelper;)V
     .locals 0
     .param p1, "this$1"    # Lcom/mobnetic/coinguardiandatamodule/tester/MainActivity$2;
-    .param p2, "x0"    # Landroid/content/Context;
-    .param p3, "x1"    # Lcom/mobnetic/coinguardian/model/Market;
-    .param p4, "x2"    # Lcom/mobnetic/coinguardian/util/CurrencyPairsMapHelper;
+    .param p2, "context"    # Landroid/content/Context;
+    .param p3, "market"    # Lcom/mobnetic/coinguardian/model/Market;
+    .param p4, "currencyPairsMapHelper"    # Lcom/mobnetic/coinguardian/util/CurrencyPairsMapHelper;
 
     .prologue
     .line 99

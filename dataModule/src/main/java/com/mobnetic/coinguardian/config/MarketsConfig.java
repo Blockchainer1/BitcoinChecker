@@ -152,5 +152,14 @@ public class MarketsConfig {
 		addMarket(new Graviex());
 		addMarket(new StockExchange());
 		addMarket(new Crex24());
+
+		addMarket(new TrocaNinja());
+		addMarket(new Southxchange());
+		addMarket(new Coinbene());
+		addMarket(new CoinExchange());
+		addMarket(new BitZ());
+
+		addMarket(new Idax());
+		addMarket(new Okex());
 	}
 }

@@ -19,8 +19,8 @@ public class Btce extends Market {
 
 	private final static String NAME = "WEX";
 	private final static String TTS_NAME = NAME;
-	private final static String URL = "https://wex.nz/api/3/ticker/%1$s";
-	private final static String URL_CURRENCY_PAIRS = "https://wex.nz/api/3/info";
+	private final static String URL = "https://wex.link/api/3/ticker/%1$s";
+	private final static String URL_CURRENCY_PAIRS = "https://wex.link/api/3/info";
 	private final static HashMap<String, CharSequence[]> CURRENCY_PAIRS = new LinkedHashMap<String, CharSequence[]>();
 	static {
 		CURRENCY_PAIRS.put(VirtualCurrency.BTC, new String[]{
