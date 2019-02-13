@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="1.15.1" versioncode="106">
+        <change>Fix Koinex parsing</change>
+    </release>
+    <release version="1.15" versioncode="105">
+        <change>New exchange: Kucoin</change>
+        <change>Migrated CoinJar to new API - please re-sync pairs.</change>
+        <change>Updated NegocieCoins API url</change>
+    </release>
+    <release version="1.14" versioncode="104">
+        <change>New exchange: Binance</change>
+        <change>Added LTC pairs to Bitso</change>
+        <change>Updated Huobi API</change>
+        <change>Fixed currencies order in Koinex</change>
+    </release>
+    <release version="1.13" versioncode="103">
+        <change>New exchanges: Paribu, SatoshiTango, Koinex, BlinkTrade and Exmo</change>
+        <change>Add BCH to Bitstamp</change>
+        <change>Added BCC and BTG to bitmarket24.pl</change>
+        <change>Updated BTCXindia</change>
+        <change>Updated API of CoinSecure</change>
+        <change>Added LTC to BL3p</change>
+        <change>Updated pairs on Bit2c</change>
+        <change>Added BTG to QuadrigaCX</change>
+        <change>Added BCH to Mercado</change>
+    </release>
+    <release version="1.12" versioncode="102">
+        <change>New exchanges: Abucoins, Braziliex and Zebpay</change>
+        <change>Migrated Bter to Gate.io</change>
+        <change>BitX renamed to Luno</change>
+        <change>Added DASH and GAME pairs to BitBay</change>
+        <change>Added BCH/CAD and ETH/BTC to QuadrigaCX</change>
+    </release>
+    <release version="1.11" versioncode="101">
+        <change>New exchanges: SurBtc, CoinFloor, Lykke and Coinnest</change>
+        <change>Btc-e renamed to WEX</change>
+        <change>Fixed Btcturk API</change>
+        <change>Added BCH to btcmarkets.net</change>
+        <change>Adding pair BCH/BTC to Bitso</change>
+        <change>Added BCH and QTUM to Coinone</change>
+        <change>Added XRP to Korbit</change>
+        <change>Updated currency pairs on Bithumb</change>
+    </release>
+    <release version="1.10" versioncode="100">
+        <change>New exchange: BL3P</change>
+        <change>Updated pairs on Bitfinex</change>
+        <change>Added pairs fetching on Bitfinex</change>
+        <change>Updated pairs on Bitstamp</change>
+        <change>Added ETC and XRP pairs to BtcMarkets.net</change>
+        <change>Added BCC, ETH and LSK pairs to BitBay</change>
+        <change>Added LTC/CAD to QuadrigaCX</change>
+        <change>Added BCC/PLN to BitMarket.pl</change>
+        <change>Fixes for Bitcoin.co.id for non-BTC pairs</change>
+    </release>
+    <release version="1.9" versioncode="99">
+        <change>New exchanges: CoinOne, Bithumb, BitFlyer and Coins.ph</change>
+        <change>Added XRP/BTC, XRP/EUR and XRP/USD pairs to Bitstamp</change>
+        <change>Added DASH, XRP and IOT pairs to Bitfinex</change>
+        <change>Added ETH/BTC, XRP/BTC and XRP/MXN pairs to Bitso</change>
+        <change>Added ETH/BTC and ETH/USD pairs to Gemini</change>
+        <change>Added ETH/KRW and ETC/KRW to Korbit</change>
+        <change>OkCoin Futures moved to okex.com</change>
+        <change>Fixed fetching pairs from Kraken</change>
+        <change>Updated TheRock to API v1</change>
+    </release>
+    <release version="1.8.1" versioncode="98">
+        <change>Fixed timestamp for BitMEX</change>
+    </release>
+    <release version="1.8" versioncode="97">
+        <change>New exchange: BitMEX</change>
+        <change>Bit-x.com renamed to CoinsBank</change>
+        <change>Updated BitcoinAverage to API v2</change>
+        <change>Updated LakeBTC to API v2</change>
+        <change>Updated CEX.IO and added dynamic pairs fetching</change>
+        <change>Added XMR/BTC and XMR/USD to Bitfinex</change>
+        <change>Added new pairs to QuadrigaCX</change>
+    </release>
+    <release version="1.7" versioncode="96">
+        <change>New Exchanges: Gatecoin, Liqui, ChileBit, SurBitcoin, VBTC, Urdubit and NegocieCoins</change>
+        <change>Updated Coinmate.IO currencies</change>
+    </release>
+    <release version="1.6.4" versioncode="95">
+        <change>Updated Coinbase API url</change>
+        <change>Added BTC/EUR and EUR/USD to Bitstamp</change>
+        <change>Added ETH in Bitso</change>
+        <change>Added BFX, ETC, RRT to Bitfinex</change>
+        <change>Added SWAP to BitMarket.pl</change>
+        <change>Added dynamic currency pairs fetching for BitX</change>
+        <change>Updated BTCXIndia API url</change>
+        <change>New exchange: ETHEX India</change>
+    </release>
+    <release version="1.6.3" versioncode="94">
+        <change>Updated Coinbase exchange to different API, you may need to re-sync currency pairs</change>
+        <change>Updated currency pairs on BtcMarkets.net</change>
+        <change>Added ETH pairs to Bitfinex</change>
+        <change>Use btc-e.nz domain (instead of btc-e.com) for users from Russia</change>
+    </release>
+    <release version="1.6.2" versioncode="92">
+        <change>New exchanges: CoinbaseExchange, Livecoin, Gemini, Coinapult and Btc38.com.</change>
+        <change>Coinbase migrated to API v2 and added dynamic pairs support.</change>
+    </release>
+    <release version="1.6.1" versioncode="91">
+        <change>New exchanges: CoinSecure, Dashcurex and Quoine.</change>
+        <change>Added BTC/USD pair to Huobi and fixed URLs</change>
+    </release>
+    <release version="1.6" versioncode="90">
+        <change>New exchanges: Uphold.com, YoBit.net, ShapeShift and BitoEX.com</change>
+        <change>Support for futures: OKCoin futures!</change>
+        <change>Updated Bitfinex exchange</change>
+    </release>
+    <release version="1.5.10" versioncode="87">
+        <change>New exchanges: BtcBox.co.jp and BTCXIndia.com</change>
+        <change>Fixes for Kraken BTC pairs, please re-sync currency pairs</change>
+        <change>Fixes for Ripio</change>
+    </release>
+    <release version="1.5.9" versioncode="86">
+        <change>New exchange: bit-x.com and Vaultoro.com (you can check price of gold in BTC)</change>
+        <change>Updated Btc-e to API v3 and added dynamic pairs fetching.</change>
+        <change>VirtEx exchange renamed to CaVirtEx</change>
+    </release>
+    <release version="1.5.8" versioncode="85">
+        <change>New exchanges: meXBT and 796.com!</change>
+    </release>
+    <release version="1.5.7" versioncode="84">
+        <change>Bleutrade updated to API v2</change>
+    </release>
+    <release version="1.5.6" versioncode="83">
+        <change>New exchanges: LocalBitcoins.com, Cryptopia.co.nz and igot.com!</change>
+    </release>
+    <release version="1.5.5" versioncode="82">
+        <change>Fix for VirtEx exchange ticker</change>
+    </release>
+    <release version="1.5.4" versioncode="81">
+        <change>New exchanges: QuadrigaCX.com, CoinMate.io, BitMarket24.pl, Buttercoin.com and CoinTrader.net!</change>
+    </release>
+    <release version="1.5.3" versioncode="80">
+        <change>Updated BitBay.net exchange</change>
+        <change>New exchange FoxBit.com.br!</change>
+    </release>
+    <release version="1.5.2" versioncode="79">
+        <change>Justcoin exchange updated - working again!</change>
+        <change>New currency pairs on Justcoin</change>
+        <change>Added dynamic currency fetching for Bitcoin.co.id - support for new pairs like XPY/BTC</change>
+    </release>
+    <release version="1.5.1" versioncode="78">
+        <change>New exchange: CleverCoin</change>
+        <change>Added support for BTC/USD and LTC/USD pairs on OKCoin</change>
+        <change>NAD, KES and MYR added to BitX.co</change>
+        <change>Fixed BtcTurk API</change>
+        <change>Added notifications settings on Android 5.0</change>
+    </release>
+    <release version="1.5" versioncode="77">
+        <change>Material Design notifications for Android 5.0!</change>
+        <change>New exchange HitBTC!</change>
+        <change>Added new currency pairs on Bitcoin.co.id.</change>
+        <change>Workaround for Cryptsy pairs sync fail in some cases</change>
+    </release>
+    <release version="1.4.6" versioncode="74">
+        <change>New exchanges: itBit.com and Bitcoin.co.id!</change>
+        <change>Added TH1/BTC pair on Bitfinex</change>
+        <change>Btcturk API changed</change>
+    </release>
+    <release version="1.4.5" versioncode="73">
+        <change>New exchange: Bitex.la!</change>
+        <change>Updated currency pairs on CEX.IO</change>
+    </release>
+    <release version="1.4.4" versioncode="72">
+        <change>New exchange: BitcoinToYou.com!</change>
+        <change>Added dynamic currency pairs fetching to Kraken</change>
+        <change>Disabled option to donate via Google Play</change>
+    </release>
+    <release version="1.4.3" versioncode="71">
+        <change>New exchange: Cryptoine!</change>
+        <change>Fixed Bitcurex API</change>
+    </release>
+    <release version="1.4.2" versioncode="70">
+        <change>New exchange: Bitso!</change>
+        <change>Improved Cryptsy backward compatibility (fixed issue that occurs on old Cryptsy Checkers without synchronization performed)</change>
+    </release>
+    <release version="1.4.1" versioncode="69">
+        <change>Fixed Paymium</change>
+    </release>
+    <release version="1.4" versioncode="68">
+        <change>New exchanges: Ripio, DolarBlue, Basebit, CoinSwap and Paymium!</change>
+        <change>Added STR on Justcoin</change>
+        <change>Reduced memory consumption</change>
+    </release>
+    <release version="1.3.9" versioncode="66">
+        <change>New exchanges: Zyado and AllCoin!</change>
+        <change>BitTrex changed to API v1.1 - works again! thanks for report!</change>
+        <change>Bug fixes</change>
+    </release>
+    <release version="1.3.8" versioncode="65">
+        <change>New exchanges: BitMaszyna.pl and BitCore!</change>
+        <change>Improved Cryptsy pairs sync</change>
+        <change>Fixed API in Huobi</change>
+        <change>Bug fixes</change>
+    </release>
+    <release version="1.3.7" versioncode="64">
+        <change>Fixed displaying of errors from exchanges servers</change>
+    </release>
+    <release version="1.3.6" versioncode="63">
+        <change>New exchange: LakeBTC!</change>
+        <change>Fixed bug that stops price refreshing in app in some cases</change>
+    </release>
+    <release version="1.3.5" versioncode="62">
+        <change>New exchanges: CoinTree and Cryptonit!</change>
+        <change>Added DOGE, START and DVC to McxNOW</change>
+        <change>Added currency pairs fetching to McxNOW and C-Cex</change>
+    </release>
+    <release version="1.3.4" versioncode="61">
+        <change>New alarm types: change by defined value (+/- value, +value or -value)</change>
+        <change>New exchange: Korbit!</change>
+        <change>Added DRK/USD and DRK/BTC to Bitfinex</change>
+        <change>Updated currency pairs on VaultOfSatoshi</change>
+        <change>Added support for dynamic currency pairs for VaultOfSatoshi</change>
+    </release>
+    <release version="1.3.3" versioncode="60">
+        <change>New exchanges: ShareXcoin, Unisend and BitcoinVenezuela!</change>
+        <change>Bleutrade exchange added again!</change>
+        <change>Added delete option on "Add/Edit Checker" screen</change>
+        <change>Added EUR/DOGE and PPC/EUR to TheRock</change>
+    </release>
+    <release version="1.3.2b" versioncode="59">
+        <change>Bleutrade is temporarily disabled due to problems with API.</change>
+    </release>
+    <release version="1.3.2" versioncode="57">
+        <change>New exchanges: BtcMarkets.net, Bleutrade and SWISSCEX!</change>
+        <change>Now you can display prices also in uBTC</change>
+        <change>Some minor fixes</change>
+    </release>
+    <release version="1.3.1" versioncode="56">
+        <change>Added RDD and ZET to Prelude.io</change>
+        <change>Added currency pairs fetching to Prelude.io</change>
+        <change>SSL certificates checking fix for currency fetching</change>
+        <change>Some fixes</change>
+    </release>
+    <release version="1.3" versioncode="55">
+        <change>New exchanges: Bit2c and BitBay.pl</change>
+        <change>Ability to sort exchanges: alphabetically or newest first</change>
+        <change>Added hints for downloading currency pairs directly from exchange</change>
+        <change>Some texts added/changed</change>
+    </release>
+    <release version="1.2.1" versioncode="54">
+        <change>Fixed Bter API address change</change>
+        <change>New exchange added: Comkort!</change>
+        <change>Added BTC/LTC and LTC/CAD to VirtEx.</change>
+        <change>Added Ask and Bid values from VirtEx new API.</change>
+    </release>
+    <release version="1.2" versioncode="53">
+        <change>New exchanges added: Prelude.io, BitKonan and BitTrex!</change>
+        <change>Fixed Poloniex API format - works again!</change>
+        <change>Added currency pairs fetching to Bitorado</change>
+        <change>Added BTC/LTC to BtcChina</change>
+        <change>Added LTC to Huobi</change>
+        <change>Added PLC to Bitorado and CCex</change>
+        <change>Ability to choose ALARM_STREAM for Alarm notifications</change>
+    </release>
+    <release version="1.1" versioncode="52">
+        <change>New exchanges added: Bitorado, CryptoRush, CoinDesk, Koinim, FybSE and FybSG</change>
+        <change>Change color of the "i" icon to update currency pairs.</change>
+        <change>Updated ticker format on BitMarket.pl</change>
+        <change>Some interface improvements</change>
+    </release>
+    <release version="1.0" versioncode="50">
+        <change>Support for dynamic currency pairs updating!  You can now fetch pairs directly from exchange without updating the entire app. Available on Bter, Cryptsy, MintPal and Poloniex!</change>
+        <change>BitMarket.pl exchange added</change>
+        <change>Added LTC market to BtcChina</change>
+        <change>Updated pairs on Bter (Added AUR, BR, C2, KDC, PRT and XCP)</change>
+        <change>Updated pairs on Cryptsy (Added: ADT, DGB, RDD, RYC, SAT and ZED; Removed MOON/BTC)</change>
+        <change>Updated pairs on MintPal</change>
+    </release>
+    <release version="0.9.2" versioncode="48">
+        <change>Ccex exchange added!</change>
+        <change>Added FLAP/BTC, MZC/BTC, TAK/BTC and UTC/BTC to Cryptsy</change>
+        <change>Added CTM/BTC, MZC/BTC, ZED/MZC, BC/LTC, CTM/LTC, MZC/LTC, PND/LTC and RBBT/LTC to MintPal</change>
+    </release>
+    <release version="0.9.1" versioncode="47">
+        <change>Removed Mtgox, set Bitstamp as a default exchange.</change>
+        <change>Changed API url for Anxpro exchange and added more currency pairs</change>
+        <change>API url for Bter fixed - works again!</change>
+        <change>New exchange: BitX</change>
+        <change>Added AUR and NXT on Cryptsy</change>
+        <change>Added SAT and DRK on MintPal</change>
+        <change>Some fixes</change>
+    </release>
+    <release version="0.9" versioncode="46">
+        <change>New exchanges added: Poloniex, Winkdex and Anxpro!</change>
+        <change>Updated currency pairs on Bter, Cryptsy and MintPal</change>
+        <change>Resolved problems with DOGE on Kraken exchange</change>
+        <change>Displaying error messages when there is a problem with particular exchange</change>
+        <change>Added "Report issue" button in Settings</change>
+        <change>Bugs fixed</change>
+    </release>
+    <release version="0.8.23" versioncode="45">
+        <change>New exchanges added: MintPal and CoinJar!</change>
+        <change>MINT and PENG added on CoinMarket.io</change>
+        <change>Added DOGE on Kraken exchange</change>
+        <change>Fixed padding issue in exchange selection dialog (Android 4.1)</change>
+        <change>TTS announcements are now disabled by default</change>
+        <change>Some UI changes</change>
+        <change>Bugs fixed</change>
+    </release>
+    <release version="0.8.22" versioncode="44">
+        <change>New exchange added: Crypto-Trade!</change>
+        <change>Cryptsy pairs updated (Added: COL, MAX, IFC/BTC, JKC/BTC, ZCC/BTC)</change>
+        <change>Vircurex pairs updated (almost 400 new pair combinations added!)</change>
+        <change>Ability to disable ticker text in price notifications</change>
+        <change>Added info that only English language is supported in TTS announcements</change>
+    </release>
+    <release version="0.8.21" versioncode="43">
+        <change>Ticker URL for BtcChina changed! It's working again:)</change>
+        <change>Some minor changes</change>
+    </release>
+    <release version="0.8.20" versioncode="42">
+        <change>McxNOW exchange added!</change>
+        <change>Bid and Ask values on Cryptsy added!</change>
+        <change>Added RPD and ICN on CoinMarket.io</change>
+        <change>Added NXT and VTC on Vircurex</change>
+        <change>Decreased bandwidth consumption for some exchanges</change>
+    </release>
+    <release version="0.8.19" versioncode="41">
+        <change>CoinMarket.io exchange added!</change>
+        <change>Bter pairs updated (Added: BTR, VTC; Removed: ANC, JRY, NVC, MYMINER, SAV)</change>
+        <change>"Sort by" option added</change>
+        <change>Drag-and-drop scrolling speed increased</change>
+        <change>Bug fixes and minor changes</change>
+    </release>
+    <release version="0.8.18" versioncode="40">
+        <change>Vault Of Satoshi exchange added!</change>
+        <change>Cryptsy pairs updated (Added: CASH, LEAF, MEOW, STR, VTC; Removed: COL)</change>
+        <change>Caution while using Coins-e added</change>
+        <change>Some info and form for suggesting new exchange added</change>
+    </release>
+    <release version="0.8.17" versioncode="39">
+        <change>Huobi exchange added</change>
+        <change>Updated Vircurex API url</change>
+        <change>Improved TTS behavior with headphones plugged in</change>
+        <change>Ability to change Audio Stream for TTS announcements</change>
+        <change>Wow! New donate options: LTC and DOGE! Such Donate!</change>
+        <change>Minor UI tweaks</change>
+    </release>
+    <release version="0.8.16" versioncode="38">
+        <change>TIPS/LTC on Cryptsy added</change>
+    </release>
+    <release version="0.8.15" versioncode="37">
+        <change>Changed default TTS price announcement</change>
+        <change>TTS announcement Customization! Check out TTS Settings.</change>
+        <change>Some interface changes</change>
+        <change>Some bug fixes</change>
+    </release>
+    <release version="0.8.14" versioncode="36">
+        <change>Added support for Canadian VirtEx exchange!</change>
+        <change>Fixed bug with entering percentage alarm value while having subunit selected.</change>
+        <change>Cryptsy pairs updated (Added: BCX, DVC/BTC, MOON, NAN, OSC, RPC, Removed: ADT)</change>
+        <change>Added support for displaying prices in mLTC</change>
+        <change>Minor TTS fixes</change>
+    </release>
+    <release version="0.8.13" versioncode="35">
+        <change>Prices formatting in notifications fixed</change>
+    </release>
+    <release version="0.8.12" versioncode="34">
+        <change>Added "Copy value from last check" functionality for checkpoint</change>
+        <change>2 new Exchanges added: TheRock and CEX.IO</change>
+        <change>NXT/BTC @ Bter added</change>
+        <change>Improved layout on 10 inch tablets</change>
+    </release>
+    <release version="0.8.11" versioncode="33">
+        <change>DARK theme to Widget added!</change>
+        <change>Updated pairs @ Cryptsy (including: 42, EAC, YBC)</change>
+        <change>Some fixes inside a Widget</change>
+    </release>
+    <release version="0.8.10" versioncode="32">
+        <change>Fixed FC on Galaxy SII while launching app.</change>
+    </release>
+    <release version="0.8.9" versioncode="31">
+        <change>Ability to choose custom alarm notification sounds!</change>
+        <change>You can now modify your Checkpoint manually!</change>
+        <change>Added LTC support @ MercadoBitcoin</change>
+        <change>TTS playback moved from MUSIC stream to NOTIFICATION</change>
+        <change>Some fixes</change>
+    </release>
+    <release version="0.8.8" versioncode="30">
+        <change>4 new exchanges added: BtcTurk, Coins-E, CampBX and BitcoinAverage!</change>
+        <change>Encoding in Change log fixed (on Android lower than 4.0)</change>
+        <change>Transparent widget added!</change>
+    </release>
+    <release version="0.8.7" versioncode="29">
+        <change>Justcoin exchange added</change>
+        <change>Cryptsy currency pairs update (including CAT, LOT...)</change>
+    </release>
+    <release version="0.8.6" versioncode="28">
+        <change>You can now display prices in mBTC or Satoshi!</change>
+        <change>Short tutorial added while adding Checker for the first time</change>
+        <change>Some fixes</change>
+    </release>
+    <release version="0.8.5" versioncode="27">
+        <change>Bter exchange added</change>
+        <change>Bitcoin-Central.net exchange added</change>
+        <change>Added more currency pairs to Cryptsy</change>
+        <change>Some minor fixes</change>
+    </release>
+    <release version="0.8.4" versioncode="26">
+        <change>Fixed FxBtc exchange</change>
+    </release>
+    <release version="0.8.3" versioncode="24">
+        <change>Drag and Drop on Android 3.0+! Long press on Checker to enter dragging mode.</change>
+        <change>FxBtc exchange added</change>
+        <change>WDC/BTC and QRK/BTC @ Vircurex added</change>
+        <change>Fixed issue with comma parsing in alarm value on some languages</change>
+    </release>
+    <release version="0.8.2" versioncode="23">
+        <change>Vircurex exchange added!</change>
+    </release>
+    <release version="0.8.1" versioncode="22">
+        <change>DOGE / BTC on Cryptsy added! Such coin wow</change>
+    </release>
+    <release version="0.8" versioncode="21">
+        <change>Multiple alerts support!!</change>
+        <change>More alarm options modes added (+% and -% changes)</change>
+        <change>Cryptsy exchange added</change>
+        <change>Coinbase support added (as a test now)</change>
+        <change>Workaround for Bitfinex added</change>
+        <change>Bug fixes</change>
+    </release>
+    <release version="0.7.4" versioncode="19">
+        <change>New DONATE methods added to support our work:)</change>
+        <change>"Change log" added on settings screen</change>
+    </release>
+    <release version="0.7.3" versioncode="18">
+        <change>Improved dealing with no Internet situations</change>
+        <change>Swapped bid with ask in BTC-e</change>
+        <change>Fixed percent change TTS Alert text</change>
+    </release>
+    <release version="0.7.2" versioncode="17">
+        <change>Global update interval added (you can change it in settings)</change>
+        <change>Widget customization added (show/hide actionbar, Compact mode)</change>
+        <change>Option to disable expandable notifications</change>
+        <change>Percent change notification fixed</change>
+        <change>Minor fixes</change>
+    </release>
+    <release version="0.7" versioncode="16">
+        <change>OKCoin exchange added</change>
+        <change>Pull-to-Refresh on main screen added</change>
+        <change>"Refresh all" button on widget added</change>
+        <change>Made currency pair bigger (because it's more important) and exchange name smaller on list</change>
+        <change>Some fixes</change>
+    </release>
+    <release version="0.6.6" versioncode="14">
+        <change>Checkers refreshing fixed</change>
+    </release>
+    <release version="0.6.5" versioncode="14">
+        <change>More alarm types added: "Greater than" and "Lower than" defined value!</change>
+        <change>New way to provide alarm condition value</change>
+        <change>New exchanges: Kraken and Bitfinex! (thanks to your suggestions)</change>
+        <change>Expandable notifications added with more information.</change>
+        <change>Added virtual FTC/USD conversion on Btc-e</change>
+        <change>Some design improvements in notifications</change>
+        <change>New alarm sounds added (some customization will be added soon)</change>
+        <change>Fixed announcement of values lower than 1 (for some currencies)</change>
+    </release>
+    <release version="0.6" versioncode="13">
+        <change>Home Widget and Lockscreen Widget added!! (for android 3.0+) - looking forward for your feedback</change>
+        <change>Added UP/DOWN arrows on main screen list</change>
+        <change>Some design tweaks</change>
+        <change>Fixed formatting for very small values for some currencies (like 0.00023) - thanks for your report:)</change>
+    </release>
+</changelog>

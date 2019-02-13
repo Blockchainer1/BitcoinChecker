@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.internal.widget.LinearLayoutICS android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GenericIcsLayout.Full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/alarmEnabledView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_enabled_title" />
+    <com.mobnetic.coinguardian.view.ViewAlarmTypeSpinnerPreference android:id="@id/alarmTypeView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_type_title" android:dialogTitle="@string/checker_add_alarm_type_title" />
+    <com.mobnetic.coinguardian.view.ViewAlarmValuePickerPreference android:id="@id/alarmValueView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_value_title" />
+    <com.mobnetic.coinguardian.view.ViewAlarmCheckPointPreference android:id="@id/alarmCheckPointView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_checkpoint_title" />
+    <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/alarmSoundView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_sound_title" />
+    <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/alarmVibrateView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_vibrate_title" />
+    <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/alarmLedView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_led_title" />
+    <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/alarmTTSView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_alarm_tts_title" android:summary="@string/checker_add_alarm_tts_summary" />
+</android.support.v7.internal.widget.LinearLayoutICS>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.mobnetic.coinguardian" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_green" android:label="@string/app_name" android:name="com.mobnetic.coinguardian.MyApplication" android:theme="@style/AppTheme">
+        <activity android:name="com.mobnetic.coinguardian.activity.CheckersListActivity" android:theme="@style/AppTheme.Cards">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/checker_add_title_new" android:name="com.mobnetic.coinguardian.activity.CheckerAddActivity"/>
+        <activity android:label="@string/checker_add_alarm_title" android:name="com.mobnetic.coinguardian.activity.CheckerAddAlarmActivity"/>
+        <activity android:label="@string/checker_add_check_market_title" android:name="com.mobnetic.coinguardian.activity.MarketPickerListActivity"/>
+        <activity android:label="@string/suggest_new_exchange_activity_title" android:name="com.mobnetic.coinguardian.activity.SuggestNewExchangeActivity"/>
+        <activity android:label="@string/settings_activity_title" android:name="com.mobnetic.coinguardian.activity.SettingsMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/settings_notifications_category_title" android:name="com.mobnetic.coinguardian.activity.SettingsNotificationsActivity"/>
+        <activity android:label="@string/settings_sounds_category_title" android:name="com.mobnetic.coinguardian.activity.SettingsSoundsActivity"/>
+        <activity android:label="@string/settings_tts_category_title" android:name="com.mobnetic.coinguardian.activity.SettingsTTSActivity"/>
+        <activity android:label="@string/widget_settings_title" android:name="com.mobnetic.coinguardian.appwidget.WidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name="com.mobnetic.coinguardian.receiver.MyHelperEventsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.mobnetic.coinguardian.receiver.NotificationAndWidgetReceiver">
+            <intent-filter>
+                <action android:name="com.mobnetic.coinguardian.receiver.action.notification_refresh"/>
+                <action android:name="com.mobnetic.coinguardian.receiver.action.notification_refresh_all"/>
+                <action android:name="com.mobnetic.coinguardian.receiver.action.notification_checker_alarm_details"/>
+                <action android:name="com.mobnetic.coinguardian.receiver.action.notification_alarm_dismiss"/>
+                <action android:name="com.mobnetic.coinguardian.alarm.ALARM_DISMISS"/>
+                <action android:name="com.mobnetic.coinguardian.alarm.ALARM_DONE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.mobnetic.coinguardian.receiver.MarketChecker"/>
+        <provider android:authorities="com.mobnetic.coinguardian.db.content.maindb" android:exported="false" android:name="com.mobnetic.coinguardian.db.content.MaindbContentProvider"/>
+        <receiver android:enabled="@bool/isAboveApi11" android:label="@string/app_name" android:name="com.mobnetic.coinguardian.appwidget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"/>
+        </receiver>
+        <service android:enabled="@bool/isAboveApi11" android:exported="false" android:name="com.mobnetic.coinguardian.appwidget.WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+    </application>
+</manifest>

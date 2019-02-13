@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobnetic.coinguardian.preferences.FrequencyPickerDialogPreference android:title="@string/settings_check_global_frequency_title" android:key="@string/settings_check_global_frequency_key" android:dialogTitle="@string/settings_check_global_frequency_title" />
+    <Preference android:title="@string/settings_notifications_category_title" android:key="@string/settings_notifications_category_key" />
+    <Preference android:title="@string/settings_sounds_category_title" android:key="@string/settings_sounds_category_key" />
+    <Preference android:title="@string/settings_tts_category_title" android:key="@string/settings_tts_category_key" />
+    <PreferenceCategory android:title="@string/settings_about_category_title">
+        <Preference android:title="@string/settings_about_report_issue_title" android:key="@string/settings_about_report_issue_key" android:summary="@string/settings_about_report_issue_summary" />
+        <Preference android:title="@string/settings_about_github_title" android:key="@string/settings_about_github_key" />
+        <Preference android:title="@string/settings_about_donate_title" android:key="@string/settings_about_donate_key" android:summary="@string/settings_about_donate_summary" />
+        <Preference android:title="@string/settings_about_share_title" android:key="@string/settings_about_share_key" android:summary="@string/settings_about_share_summary" />
+        <Preference android:title="@string/settings_about_rate_title" android:key="@string/settings_about_rate_key" android:summary="@string/settings_about_rate_summary" />
+        <Preference android:title="@string/settings_about_changelog_title" android:key="@string/settings_about_changelog_key" />
+        <Preference android:title="@string/settings_about_version_title" android:key="@string/settings_about_version_key" android:summary="@string/settings_about_version_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

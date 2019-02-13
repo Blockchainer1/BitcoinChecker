@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.internal.widget.LinearLayoutICS android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GenericIcsLayout.Full">
+            <com.mobnetic.coinguardian.view.generic.ViewSwitchPreference android:id="@id/enabledView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_enable" />
+            <com.mobnetic.coinguardian.view.generic.ViewPreference android:id="@id/marketSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_market_title">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="marquee" android:id="@id/titleView" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="30.0sp" android:id="@id/summaryView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/holo_red_dark" android:gravity="center_horizontal" android:id="@id/marketCautionView" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.mobnetic.coinguardian.view.generic.ViewPreference>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.internal.widget.LinearLayoutICS android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/currencySpinnersAndDynamicPairsWrapper" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GenericIcsLayout">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/currencySpinnersWrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mobnetic.coinguardian.view.ViewCurrencySpinnerPreference android:id="@id/currencySrcSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:title="@string/checker_add_check_currency_src_title" android:dialogTitle="@string/checker_add_check_currency_src_dialog_title">
+                            <TextView style="@style/CheckerAddCurrencySummary" />
+                        </com.mobnetic.coinguardian.view.ViewCurrencySpinnerPreference>
+                        <TextView android:textSize="34.0sp" android:textColor="@color/generic_separator_light" android:gravity="center_vertical" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="/" />
+                        <com.mobnetic.coinguardian.view.ViewCurrencySpinnerPreference android:id="@id/currencyDstSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:title="@string/checker_add_check_currency_dst_title" android:dialogTitle="@string/checker_add_check_currency_dst_dialog_title">
+                            <TextView style="@style/CheckerAddCurrencySummary" />
+                        </com.mobnetic.coinguardian.view.ViewCurrencySpinnerPreference>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/dynamicCurrencyPairsWarningView" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:layout_weight="1.0">
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checker_add_check_currency_empty_warning_title" android:singleLine="true" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checker_add_check_currency_empty_warning_summary" android:maxLines="8" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/dynamicCurrencyPairsInfoView" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_info" android:scaleType="center" android:minWidth="48.0dip" android:minHeight="?android:listPreferredItemHeight" />
+                </android.support.v7.internal.widget.LinearLayoutICS>
+                <LinearLayout android:gravity="top" android:id="@id/dynamicCurrencyPairsNoSyncYetView" android:paddingLeft="6.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip">
+                    <TextView android:textColor="@color/holo_red_dark" android:gravity="right" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/checker_add_check_currency_no_sync_yet_hint" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_rt_hint" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.internal.widget.LinearLayoutICS android:orientation="vertical" android:id="@id/checkSectionWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GenericIcsLayout.Full">
+                <com.mobnetic.coinguardian.view.generic.ViewSpinnerPreference android:id="@id/futuresContractTypeSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_futures_contract_type_title" android:dialogTitle="@string/checker_add_check_futures_contract_type_title" />
+                <com.mobnetic.coinguardian.view.generic.ViewSpinnerPreference android:id="@id/currencySrcSubunitSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_currency_src_subunit_title" android:dialogTitle="@string/checker_add_check_currency_src_subunit_title">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="6.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/titleView" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" android:singleLine="false" android:layout_weight="1.0" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/summaryView" android:paddingLeft="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                    </LinearLayout>
+                </com.mobnetic.coinguardian.view.generic.ViewSpinnerPreference>
+                <com.mobnetic.coinguardian.view.generic.ViewSpinnerPreference android:id="@id/currencyDstSubunitSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_currency_dst_subunit_title" android:dialogTitle="@string/checker_add_check_currency_dst_subunit_title">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="6.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/titleView" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checker_add_check_currency_dst_subunit_subtitle" android:maxLines="2" />
+                        </LinearLayout>
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/summaryView" android:paddingLeft="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                    </LinearLayout>
+                </com.mobnetic.coinguardian.view.generic.ViewSpinnerPreference>
+                <com.mobnetic.coinguardian.view.generic.ViewFrequencyPickerPreference android:id="@id/frequencySpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_frequency_title" android:dialogTitle="@string/checker_add_check_frequency_title" />
+                <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/notificationPriorityView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_notification_title" android:summary="@string/checker_add_check_notification_summary" />
+                <com.mobnetic.coinguardian.view.generic.ViewCheckBoxPreference android:id="@id/checkTTSView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/checker_add_check_tts_title" android:summary="@string/checker_add_check_tts_summary" />
+            </android.support.v7.internal.widget.LinearLayoutICS>
+        </android.support.v7.internal.widget.LinearLayoutICS>
+        <LinearLayout android:orientation="vertical" android:id="@id/alarmSectionWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/alarmSectionHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" layout="@layout/section_list_header_holo" />
+            <FrameLayout android:id="@id/checkerAddAlarmFragmentWrapper" android:background="@drawable/card_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <fragment android:name="com.mobnetic.coinguardian.fragment.CheckerAddAlarmFragment" android:id="@id/checkerAddAlarmFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.linearlistview.LinearListView android:orientation="vertical" android:id="@id/alarmsListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" app:dividerThickness="0.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

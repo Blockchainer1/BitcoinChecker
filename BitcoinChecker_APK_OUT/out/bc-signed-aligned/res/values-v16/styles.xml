@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CheckBox" parent="@style/AbsCheckBox">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="EditText" parent="@style/AbsEditText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextView" parent="@style/AbsTextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>
